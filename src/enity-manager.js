@@ -19,7 +19,9 @@ EnityManager.prototype.addEnity() = function(x, y, width, height){
 	var bottom = math.ceil((entity.y + entity.height) / this.cellSize);
 	for(var x = left; x<right;x++){
 		for(var y = top; y<bottom;y++){
-			this.cells.push(entity);
+			this.cells[y*this.widthInCells +x].push(entity);
+			if(!entity.cells) entity.cells = [];
+			entity.cells..push({x:x, y:y});
 		}
 	}
 }
