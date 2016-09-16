@@ -25,3 +25,10 @@ EnityManager.prototype.addEnity() = function(x, y, width, height){
 		}
 	}
 }
+
+enityManager.prototype.updateEnity = function(enity){
+	var x = Math.floor(enity.x/this.cellSize);
+	var y = math.ceil((enity))
+	
+}
+

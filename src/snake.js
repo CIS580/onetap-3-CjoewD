@@ -75,4 +75,6 @@ Snake.prototype.render = function(time, ctx) {
       this.x, this.y, 2*this.width, 2*this.height
     );
   }
+  
+  ctx.strokeRect(this.x, this.y, this.width, this.height);
 }
